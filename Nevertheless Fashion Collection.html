@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nevertheless Fashion Collection</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+        <style>
+    body {
+        background-color: rgb(181, 188, 255); /* Warna latar belakang putih */
+        color: #ffffff; /* Warna teks hitam */
+    }
+
+    .navbar {
+        padding: 1rem 0; /* Atur padding atas dan bawah navbar */
+        background-color: #ffffff; /* Warna latar belakang navbar putih */
+    }
+
+    .navbar {
+        background-color: #ffffff !important;
+    }
+    .navbar-brand,
+    .navbar-nav .nav-link {
+        color: #000000 !important;
+    }
+
+    .product-card {
+    margin-bottom: 20px; /* Jarak antar produk */
+    background-color: #ffffff; /* Warna latar belakang produk putih */
+    padding: 10px; /* Padding di sekitar produk */
+    border-radius: 8px; /* Menambahkan sudut bulat pada kartu produk */
+    color: #000000; /* Warna teks hitam */
+    transition: background-color 0.3s ease;
+    width: 250px; /* Lebar kartu produk */
+}
+
+.product-card:hover {
+    background-color: #1c1b1b; /* Warna latar belakang saat hover */
+}
+.product-img {
+    width: 100%;
+    height: 150px; /* Tinggi gambar produk */
+    border-radius: 8px; /* Menambahkan sudut bulat pada gambar produk */
+    object-fit: cover; /* Memastikan gambar sesuai dengan container */
+    transition: transform 0.3s ease;
+}
+
+.product-img:hover {
+    transform: scale(1.1); /* Memperbesar gambar saat hover */
+}
+.product-info {
+    height: 100px; /* Tinggi informasi produk */
+}
+
+.product-title {
+    font-size: 14px; /* Ukuran font judul produk */
+    margin-bottom: 5px; /* Jarak bawah judul produk */
+}
+
+.product-price {
+    font-size: 12px; /* Ukuran font harga produk */
+}
+.product-price {
+    font-size: 12px; /* Ukuran font harga produk */
+}
+/* Warna latar belakang dan teks pada footer */
+footer {
+    background-color: #ffffff !important; /* Warna latar belakang footer putih */
+    color: #ffffff; /* Warna teks footer putih */
+}
+</style>
+
+        
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding: 10px 0;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div class="store-logo">
+                    <img src="https://i.pinimg.com/564x/6d/87/5b/6d875bccac90dd68fb9ceb70f8066727.jpg" alt="Store Logo"
+                        style="max-height: 40px;">
+                </div>
+                <span class="store-name" style="font-size: 18px;">Starlight <span>K-Fashion</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html" style="font-size: 14px;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-size: 14px;">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true" style="font-size: 14px;">Disabled</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 14px;">Dropdown</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section text-center" id="hero-section">
+        <div class="container">
+            <h1>Nevertheless Fashion Collection</h1>
+        </div>
+    </div>
+
+    <!-- Product Section -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Product Cards -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="card">
+                        <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//catalog-image/103/MTA-109913628/joy_gryson_joy_gryson_sierra_shoulder_bag_-_off_white_full01_bjepz0xm.jpg" class="card-img-top product-img" alt="Sierra Shoulder Bag">
+                        <div class="card-body">
+                            <h5 class="card-title">Sierra Shoulder Bag | Yu Na Bi</h5>
+                            <p class="card-text">Carry sophistication and style with the Sierra Shoulder Bag by Yu Na Bi. Perfect for any outfit and occasion.</p>                            
+                            <p class="card-text">Price: Rp 2.150.000</p>
+                            <a href="checkout.html" class="btn btn-primary">Order Now</a> <!-- Tautkan ke halaman checkout -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Cards -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="card">
+                        <img src="https://static.massimodutti.net/3/photos/2024/V/0/2/p/0156/498/251/0156498251_2_5_16.jpg?t=1713279582573"
+                            class="card-img-top product-img" alt="Linen Shirts">
+                        <div class="card-body">
+                            <h5 class="card-title">Linen Shirts| Yu Na Bi</h5>
+                            <p class="card-text">Stay cool and stylish with Yu Na Bi's Linen Shirts. Perfect for any summer occasion.</p>                            
+                            <p class="card-text">Price: Rp 430.000</p>
+                            <a href="checkout.html" class="btn btn-primary">Order Now</a> <!-- Tautkan ke halaman checkout -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Cards -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="card">
+                        <img src="https://static.massimodutti.net/3/photos/2024/V/0/1/p/5202/502/427/5202502427_2_5_16.jpg?t=1709627970664&impolicy=massimodutti-itxmediumhigh&imformat=chrome&imwidth=800"
+                            class="card-img-top product-img" alt="Denim Midi Skirt">
+                        <div class="card-body">
+                            <h5 class="card-title">Denim Midi Skirt | Yu Na Bi</h5>
+                            <p class="card-text">Add a modern twist to your wardrobe with Yu Na Bi's Denim Midi Skirt. A versatile piece for any occasion</p>                            
+                            <p class="card-text">Price: Rp 290.000</p>
+                            <a href="checkout.html" class="btn btn-primary">Order Now</a> <!-- Tautkan ke halaman checkout -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Cards -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmDeq41i6ObqplSvZxEm1xh_hgvbanHoGvmbWaArwbKMb6613c9gQPWXJXpENmuv2cB90&usqp=CAU"
+                            class="card-img-top product-img" alt="Striped Polo Sweater">
+                        <div class="card-body">
+                            <h5 class="card-title">Striped Polo Sweater | Yu Na Bi</h5>
+                            <p class="card-text">Elevate your style game with Yu Na Bi's Striped Polo Sweater. A classic piece with a modern twist</p>                            
+                            <p class="card-text">Price: Rp 820.000</p>
+                            <a href="checkout.html" class="btn btn-primary">Order Now</a> <!-- Tautkan ke halaman checkout -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Cards -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="card">
+                        <img src="https://www.mangooutlet.com/assets/rcs/pics/static/T4/fotos/S/47032514_02_R.jpg?imwidth=2048&imdensity=1&ts=1683117651876"
+                            class="card-img-top product-img" alt="Suede Worker Jacket">
+                        <div class="card-body">
+                            <h5 class="card-title">Reverse Detail T-shirts | Yu Na Bi</h5>
+                            <p class="card-text">Make a statement with Yu Na Bi's Reverse Detail T-shirts. A unique and stylish addition to your casual wardrobe</p>
+                            <p class="card-text">Price: Rp 310.000</p>
+                            <a href="checkout.html" class="btn btn-primary">Order Now</a> <!-- Tautkan ke halaman checkout -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Cards -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="card">
+                        <img src="https://www.wishbucket.io/_next/image?url=https%3A%2F%2Fd2gfz7wkiigkmv.cloudfront.net%2Fpickin%2F2%2F1%2F2%2Fw8Qa4CbjSempxVikEkDAAA&w=1080&q=75" class="card-img-top product-img"
+                            alt="Western Denim Dress">
+                        <div class="card-body">
+                            <h5 class="card-title">Western Denim Dress | Yu Na Bi</h5>
+                            <p class="card-text">Embrace the western trend with Yu Na Bi's Denim Dress. A versatile piece that can be dressed up or down for any occasion.</p>
+                            <p class="card-text">Price: Rp 750.000</p>
+                            <a href="checkout.html" class="btn btn-primary">Order Now</a> <!-- Tautkan ke halaman checkout -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-dark text-white text-center" style="width: 100%;">
+        <div class="container">
+            <span class="text-muted">© 2024 Starlight K-Fashion. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <!-- Link jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

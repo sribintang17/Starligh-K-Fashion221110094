@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovely Runner Fashion Collection</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+        <style>
+    body {
+        background-color: #E1AFD1; /* Warna latar belakang putih */
+        color: #000000; /* Warna teks hitam */
+    }
+
+    .navbar {
+        padding: 1rem 0; /* Atur padding atas dan bawah navbar */
+        background-color: #ffffff; /* Warna latar belakang navbar putih */
+    }
+
+    .navbar {
+        background-color: #ffffff !important;
+    }
+    .navbar-brand,
+    .navbar-nav .nav-link {
+        color: #000000 !important;
+    }
+
+
+    .product-card {
+    margin-bottom: 20px; /* Jarak antar produk */
+    background-color: #ffffff; /* Warna latar belakang produk putih */
+    padding: 10px; /* Padding di sekitar produk */
+    border-radius: 8px; /* Menambahkan sudut bulat pada kartu produk */
+    color: #000000; /* Warna teks hitam */
+    transition: background-color 0.3s ease;
+    width: 250px; /* Lebar kartu produk */
+}
+
+.product-card:hover {
+    background-color: #1c1b1b; /* Warna latar belakang saat hover */
+}
+.product-img {
+    width: 100%;
+    height: 150px; /* Tinggi gambar produk */
+    border-radius: 8px; /* Menambahkan sudut bulat pada gambar produk */
+    object-fit: cover; /* Memastikan gambar sesuai dengan container */
+    transition: transform 0.3s ease;
+}
+
+.product-img:hover {
+    transform: scale(1.1); /* Memperbesar gambar saat hover */
+}
+.product-info {
+    height: 100px; /* Tinggi informasi produk */
+}
+
+.product-title {
+    font-size: 14px; /* Ukuran font judul produk */
+    margin-bottom: 5px; /* Jarak bawah judul produk */
+}
+
+.product-price {
+    font-size: 12px; /* Ukuran font harga produk */
+}
+.product-price {
+    font-size: 12px; /* Ukuran font harga produk */
+}
+/* Warna latar belakang dan teks pada footer */
+footer {
+    background-color: #ffffff !important; /* Warna latar belakang footer putih */
+    color: #ffffff; /* Warna teks footer putih */
+}
+
+
+</style>
+
+        
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding: 10px 0;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div class="store-logo">
+                    <img src="https://i.pinimg.com/564x/6d/87/5b/6d875bccac90dd68fb9ceb70f8066727.jpg" alt="Store Logo"
+                        style="max-height: 40px;">
+                </div>
+                <span class="store-name" style="font-size: 18px;">Starlight <span>K-Fashion</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html" style="font-size: 14px;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-size: 14px;">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true" style="font-size: 14px;">Disabled</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 14px;">Dropdown</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section text-center" id="hero-section">
+        <div class="container">
+            <h1>Lovely Runner Fashion Collection</h1>
+        </div>
+    </div>
+
+    <!-- Product Section -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Product Cards -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="card">
+                        <img src="https://aritzia.scene7.com/is/image/Aritzia/hi-res/s19_02_a08_71325_1844_on_b.jpg" class="card-img-top product-img" alt="Flower Sleeveless Dress">
+                        <div class="card-body">
+                            <h5 class="card-title">Flower Sleeveless Dress | Im Sol</h5>
+                            <p class="card-text">Adorn yourself with the grace and allure embodied by the "Flower Sleeveless Dress" designed by Im Sol for the Lovely Runner collection</p>
+                            <p class="card-text">Price: Rp 254.915</p>
+                            <a href="checkout.html" class="btn btn-primary">Order Now</a> <!-- Tautkan ke halaman checkout -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Cards -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="card">
+                        <img src="https://image.msscdn.net/images/prd_img/20240228/3911203/detail_3911203_17091081166969_500.jpg"
+                            class="card-img-top product-img" alt="Bueno Anorak Jacket">
+                        <div class="card-body">
+                            <h5 class="card-title">Bueno Anorak Jacket | Ryu Sunjae</h5>
+                            <p class="card-text">Enhance your look with the same elegance as portrayed by the "Bueno Anorak Jacket" designed by Ryu Sunjae.</p>                            
+                            <p class="card-text">Price: Rp 250.000</p>
+                            <a href="checkout.html" class="btn btn-primary">Order Now</a> <!-- Tautkan ke halaman checkout -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Cards -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="card">
+                        <img src="https://image.msscdn.net/images/goods_img/20220531/2592172/2592172_1_500.jpg"
+                            class="card-img-top product-img" alt="Tweed Cardigan + Bustier Set">
+                        <div class="card-body">
+                            <h5 class="card-title">Tweed Cardigan + Bustier Set | Im Sol</h5>
+                            <p class="card-text">Experience the sophistication of Im Sol's "Tweed Cardigan + Bustier Set"</p>                            
+                            <p class="card-text">Price: Rp 310.000</p>
+                            <a href="checkout.html" class="btn btn-primary">Order Now</a> <!-- Tautkan ke halaman checkout -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Cards -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="card">
+                        <img src="https://toutyest.jp/cdn/shop/files/TOUT-Y-EST-BAG-029.jpg?v=1700294714&width=1024"
+                            class="card-img-top product-img" alt="Sac Bout Mini">
+                        <div class="card-body">
+                            <h5 class="card-title">Sac Bout Mini | Im Sol</h5>
+                            <p class="card-text">Enhance your style with the chic "Sac Bout Mini" designed by Im Sol</p>                            
+                            <p class="card-text">Price: Rp 2.300.000</p>
+                            <a href="checkout.html" class="btn btn-primary">Order Now</a> <!-- Tautkan ke halaman checkout -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Cards -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="card">
+                        <img src="https://image.msscdn.net/images/goods_img/20230821/3480479/3480479_16939784829941_500.jpg"
+                            class="card-img-top product-img" alt="YES Oxford Shirt">
+                        <div class="card-body">
+                            <h5 class="card-title">YES Oxford Shirt | Ryu Sunjae</h5>
+                            <p class="card-text">Elevate your look with the refined elegance of the "YES Oxford Shirt" by Ryu Sunjae.</p>
+                            <p class="card-text">Price: Rp 599.000</p>
+                            <a href="checkout.html" class="btn btn-primary">Order Now</a> <!-- Tautkan ke halaman checkout -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Cards -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <div class="card">
+                        <img src="https://image.msscdn.net/images/prd_img/20230911/3548281/detail_3548281_16947825582701_500.jpg" class="card-img-top product-img"
+                            alt="Trucker Jacket">
+                        <div class="card-body">
+                            <h5 class="card-title">Trucker Jacket | Ryu Sunjae</h5>
+                            <p class="card-text">Wrap yourself in sophistication with the "Trucker Jacket" by Ryu Sunjae.</p>
+                            <p class="card-text">Price: Rp 5.600.000</p>
+                            <a href="checkout.html" class="btn btn-primary">Order Now</a> <!-- Tautkan ke halaman checkout -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-dark text-white text-center" style="width: 100%;">
+        <div class="container">
+            <span class="text-muted">© 2024 Starlight K-Fashion. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <!-- Link jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

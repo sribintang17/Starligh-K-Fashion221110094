@@ -1,0 +1,163 @@
+/* Your custom CSS styles */
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem; /* Adjust as needed */
+  font-size: 1rem; /* Adjust as needed */
+  font-weight: 400; /* Adjust as needed */
+  text-decoration: none;
+  background: none;
+  border: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+/* Custom CSS styles */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-toggler {
+  order: -1;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+.jumbotron {
+  background-size: cover;
+  background-position: center;
+  height: 300vh; /* Ubah tinggi menjadi 100vh agar sesuai dengan tinggi layar */
+  transition: background-image 1s ease; /* Transisi untuk perubahan latar belakang */
+  /* Transisi untuk perubahan latar belakang */
+  background-image: url('https://i.pinimg.com/564x/9c/41/7d/9c417d8a41e677efb338dc0bbc3d5c7c.jpg'); /* URL gambar dengan resolusi HD */
+}
+
+/* CSS untuk navbar warna pastel */
+.navbar {
+  background-color: #ffffff !important; /* Warna pastel biru */
+}
+
+element.style {
+    width: 80%;
+    height: 300px;
+    border-radius: 21px 21px 0 0;
+}
+.bg-body {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
+}
+.mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+.shadow-sm {
+    box-shadow: var(--bs-box-shadow-sm) !important;
+}
+body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom CSS untuk logo toko */
+.store-logo img {
+  width: 50px; /* Sesuaikan ukuran sesuai kebutuhan */
+  height: 50px; /* Sesuaikan ukuran sesuai kebutuhan */
+  border-radius: 50%; /* Membuat logo menjadi bulat */
+  margin-right: 10px; /* Jarak antara logo dan nama toko */
+}
+
+/* CSS untuk teks "Starlight K-Fashion" */
+.store-name {
+  font-size: 1.5rem; /* Sesuaikan ukuran sesuai kebutuhan */
+  color: rgb(0, 0, 0); /* Warna teks nama toko */
+  line-height: 50px; /* Sesuaikan dengan tinggi logo untuk pemuatan vertikal */
+  font-family: 'Roboto', sans-serif; /* Ganti jenis font */
+  font-weight: bold; /* Tambahkan ketebalan teks */
+  font-style: italic; /* Tambahkan gaya miring */
+}
+
+/* Ganti jenis font dan tambahkan efek bayangan pada teks "Starlight K-Fashion" */
+.store-name span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Ganti jenis font */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Tambahkan efek bayangan */
+}
+
+.icon-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #007bff; /* Sesuaikan warna dengan tema */
+}
+
+.icon-link:hover {
+  text-decoration: underline;
+  color: #0056b3; /* Sesuaikan warna dengan tema */
+}
+
+.icon-link svg {
+  margin-left: 5px;
+  width: 12px; /* Ukuran lebar ikon */
+  height: 12px; /* Ukuran tinggi ikon */
+}
+.find-favorite {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, .75rem);
+  padding-left: var(--bs-gutter-x, .75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+.row .col-md-2 {
+  flex: 0 0 20%; /* Mengatur lebar kolom menjadi 20% */
+  max-width: 20%; /* Mengatur lebar maksimum kolom */
+}
+
+.kdrama-poster img {
+  width: 100%; /* Mengatur lebar gambar menjadi 100% dari parent */
+  height: auto; /* Mengatur tinggi gambar secara otomatis sesuai dengan lebar */
+}
+
+
+  .kdrama-poster img {
+    width: 150px; /* Lebar logo */
+    height: 150px; /* Tinggi logo */
+    border-radius: 15px; /* Corner radius */
+    transition: transform 0.3s ease; /* Efek transisi saat dihover */
+  }
+
+  .kdrama-poster p {
+    margin-top: 5px;
+  }
+
+  .kdrama-poster:hover img {
+    transform: scale(1.1); /* Efek scaling saat dihover */
+  }
+
+
+footer {
+    display: block;
+    unicode-bidi: isolate;
+}

@@ -1,0 +1,17 @@
+/* Gaya CSS untuk bagian About Starlight K-Fashion */
+.about-section {
+    padding: 80px 0; /* Padding atas dan bawah */
+  }
+  
+  .about-heading {
+    font-size: 2.5rem; /* Ukuran font judul */
+    text-align: center; /* Pusatkan teks */
+    margin-bottom: 30px; /* Jarak bawah */
+  }
+  
+  .about-text {
+    font-size: 1.1rem; /* Ukuran font teks */
+    line-height: 1.6; /* Tinggi baris */
+    text-align: justify; /* Justifikasi teks */
+  }
+  
